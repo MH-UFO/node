@@ -22,6 +22,12 @@ app.get("/benz", (req, res) => {
 app.get("/Audi", (req, res) => {
   res.sendFile("/public/index.html")
 })
+app.get("/Doge", (req, res) => {
+  res.sendFile("/public/index.html")
+})
+app.get("/Ferari", (req, res) => {
+  res.sendFile("/public/index.html")
+})
 
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
