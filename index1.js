@@ -11,10 +11,15 @@ app.get("/", (req, res) => {
   res.send(`<h1>Behold, I am ${name}!</h1>`);
 });
 
-app.get("/bmw" , (req , res)=>{
+app.get("/bmw", (req, res) => {
   res.sendFile("/public/index.html")
 })
-app.get("/benz" , (req , res)=>{
+
+app.get("/benz", (req, res) => {
+  res.sendFile("/public/index.html")
+})
+
+app.get("/Audi", (req, res) => {
   res.sendFile("/public/index.html")
 })
 
