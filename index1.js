@@ -1,6 +1,7 @@
 import express from "express";
 import superheroes from "superheroes";
 
+
 const app = express();
 const port = 3000;
 
@@ -11,7 +12,10 @@ app.get("/", (req, res) => {
 });
 
 app.get("/bmw" , (req , res)=>{
-  res.send("/public/index.html")
+  res.sendFile("/public/index.html")
+})
+app.get("/benz" , (req , res)=>{
+  res.sendFile("/public/index.html")
 })
 
 app.listen(port, () => {
